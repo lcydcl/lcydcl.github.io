@@ -1,0 +1,226 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/blog/Public/Css/common.css" />
+	<script type="text/JavaScript" src='/blog/Public/Js/jquery-1.7.2.min.js'></script>
+	<script type="text/JavaScript" src='/blog/Public/Js/common.js'></script>
+		<link rel="stylesheet" href="/blog/Public/Css/show.css" />
+     	<link rel="stylesheet"  href="/blog/Data/ueditor/third-party
+     	/SyntaxHighlighter/shCoreDefault.css">
+
+     	<script type="text/javascript" src="/blog/Data/ueditor/third-party
+     	/SyntaxHighlighter/shCore.js"></script>
+     	<script type="text/javascript">
+     		SyntaxHighlighter.all();
+     	</script>
+     </head>
+<body>
+<!--头部-->
+
+	<div class='top-list-wrap'>
+		<div class='top-list'>
+			<ul class='l-list'>
+				<li><a href="http://www.houdunwang.com" target='_blank'>后盾网</a></li>
+				<li><a href="http://bbs.houdunwang.com" target='_blank'>后盾网论坛</a></li>
+				<li><a href="http://study.houdunwang.com" target='_blank'>后盾学习社区</a></li>
+			</ul>
+			<ul class='r-list'>
+				<li><a href="http://www.hdphp.com" target='_blank'>HDPHP框架</a></li>
+				<li><a href="http://bbs.houdunwang.com" target='_blank'>免费视频教程</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class='top-search-wrap'>
+		<div class='top-search'>
+			<a href="http://bbs.houdunwang.com" target='_blank' class='logo'>
+				<img src="/blog/Public/Images/logo.png"/>
+			</a>
+			<div class='search-wrap'>
+				<form action="" method='get'>
+					<input type="text" name='keyword' class='search-content'/>
+					<input type="submit" name='search' value='搜索'/>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class='top-nav-wrap'>
+		<ul class='nav-lv1'>
+			<li class='nav-lv1-li'>
+				<a href="/blog" class='top-cate'>博客首页</a>
+			</li>
+			<li class='nav-lv1-li'>
+					<a href="/blog/c_6.html" class='top-cate'>LINUX</a>
+						<ul>
+							<li><a href="/blog/c_17.html">基本命令</a></li><li><a href="/blog/c_18.html">网络配置</a></li>						</ul>
+				</li><li class='nav-lv1-li'>
+					<a href="/blog/c_2.html" class='top-cate'>DIV+CSS</a>
+						<ul>
+													</ul>
+				</li><li class='nav-lv1-li'>
+					<a href="/blog/c_3.html" class='top-cate'>JavaScript</a>
+						<ul>
+							<li><a href="/blog/c_8.html">jQuery</a></li><li><a href="/blog/c_9.html">Ajax</a></li>						</ul>
+				</li><li class='nav-lv1-li'>
+					<a href="/blog/c_4.html" class='top-cate'>PHP</a>
+						<ul>
+							<li><a href="/blog/c_10.html">字符串</a></li><li><a href="/blog/c_11.html">数组</a></li><li><a href="/blog/c_12.html">对象</a></li>						</ul>
+				</li><li class='nav-lv1-li'>
+					<a href="/blog/c_5.html" class='top-cate'>MySQL</a>
+						<ul>
+							<li><a href="/blog/c_16.html">视图</a></li><li><a href="/blog/c_14.html">存储过程</a></li><li><a href="/blog/c_15.html">事务</a></li><li><a href="/blog/c_13.html">存储引擎</a></li>						</ul>
+				</li><li class='nav-lv1-li'>
+					<a href="/blog/c_1.html" class='top-cate'>HTML</a>
+						<ul>
+													</ul>
+				</li><li class='nav-lv1-li'>
+					<a href="/blog/c_7.html" class='top-cate'>其他</a>
+						<ul>
+													</ul>
+				</li>		</ul>
+	</div>
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<div class='location'>
+				<a href="">首页</a>>
+				<!-- 判断>的个数，count 求出parent的总长度，-1，得到最后一个，注意$key，由foreach自动产生 -->
+								<!-- 每个父项调到对应的页面 -->
+					<a href="/blog/c_4.html">PHP</a>			</div>
+			<div class="title">
+				<p>PHP怎么定义一个对象</p>
+				<div>
+					<span class='fl'>发布于:2016年11月16日</span>
+					<span class='fr'>
+						已被阅读<script type="text/javascript" src='/blog/Index/Show/clickNum/id/12.html'></script>次
+					</span>
+				</div>
+			</div>
+			<div class='content' style='word-break:break-all'>
+				<pre class="brush:php;toolbar:false">&lt;?php
+Class&nbsp;Category
+{
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Static&nbsp;Public&nbsp;function&nbsp;unlimitedForLevel($cate,$html=&#39;--&#39;,$pid=0,$level=0)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach($cate&nbsp;as&nbsp;$v)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($v[&#39;pid&#39;]==$pid)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$v[&#39;level&#39;]=$level+1;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$v[&#39;html&#39;]=str_repeat($html,&nbsp;$level);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr[]=$v;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array_merge($arr,self::unlimitedForLevel($cate,$html,$v[&#39;id&#39;],$level+1));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$arr;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Static&nbsp;Public&nbsp;function&nbsp;unlimitedForLayer($cate,$name=&#39;child&#39;,$pid=0)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;($cate&nbsp;as&nbsp;$v)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($v[&#39;pid&#39;]==$pid)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$v[$name]=self::unlimitedForLayer($cate,$name,$v[&#39;id&#39;]);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr[]=$v;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$arr;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;Static&nbsp;Public&nbsp;function&nbsp;getParents($cate,$id)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;($cate&nbsp;as&nbsp;$v)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($v[&#39;id&#39;]&nbsp;==&nbsp;$id)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr[]=$v;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array_merge(self::getParents($cate,$v[&#39;pid&#39;]),$arr);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$arr;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;Static&nbsp;Public&nbsp;function&nbsp;&nbsp;getChildsId($cate,$pid)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;($cate&nbsp;as&nbsp;$v)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($v[&#39;pid&#39;]==$pid)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr[]=$v[&#39;id&#39;];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array_merge($arr,self::getChildsId($cate,$v[&#39;id&#39;]));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$arr;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+&nbsp;&nbsp;&nbsp;&nbsp;Static&nbsp;public&nbsp;function&nbsp;getChilds($cate,$pid)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach($cate&nbsp;as&nbsp;$v)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($v[&#39;pid&#39;]==$pid)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr[]=$v;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$arr=array_merge($arr,self::getChilds($cate,$v[&#39;id&#39;]));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$arr;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+
+}
+?&gt;</pre><p><br/></p>			</div>
+		</div>
+	<div class='main-right'>
+	<dl>
+	<dt>热门博文</dt>
+	<dd>
+			<a href="/blog/12.html" target='_blank'>PHP怎么定义一个对象</a>
+			<span>(1238)</span>
+		</dd><dd>
+			<a href="/blog/10.html" target='_blank'>php用法</a>
+			<span>(104)</span>
+		</dd><dd>
+			<a href="/blog/11.html" target='_blank'>算法</a>
+			<span>(103)</span>
+		</dd>
+</dl>		<dl>
+		<dt>最发布发</dt>
+		<dd>
+				<a href="/blog/12.html">PHP怎么定义一个对象</a>
+				<span>(1238)</span>
+			</dd><dd>
+				<a href="/blog/11.html">算法</a>
+				<span>(103)</span>
+			</dd><dd>
+				<a href="/blog/10.html">php用法</a>
+				<span>(104)</span>
+			</dd>	</dl>
+	<dl>
+		<dt>友情连接</dt>
+		<dd>
+			<a href="">后盾网</a>
+		</dd>
+
+		<dd>
+			<a href="">后盾网论坛</a>
+		</dd>
+		<dd>
+			<a href="">后盾网学习社区</a>
+		</dd>
+	</dl>
+</div>
+	</div>
+	<!--底部-->
+	<div class='bottom'>
+		<div></div>
+	</div>
+</body>
+</html>

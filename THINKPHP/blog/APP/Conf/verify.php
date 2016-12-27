@@ -1,0 +1,1 @@
+<?php	return array ( 'VERIFY_LENGTH' => '', 'VERIFY_WIDTH' => '500', 'VERIFY_HEIGHT' => '', 'VERIFY_BGCOLOR' => '', 'VERIFY_SEED' => '', 'VERIFY_FONTFILE' => '', 'VERIFY_SIZE' => '', 'VERIFY_COLOR' => '', 'VERIFY_NAME' => '', 'VERIFY_FUNC' => '', );?>

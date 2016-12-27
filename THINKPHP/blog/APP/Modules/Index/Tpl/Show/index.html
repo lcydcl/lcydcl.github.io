@@ -1,0 +1,39 @@
+	<include file='Common:header'/>
+		<link rel="stylesheet" href="__PUBLIC__/Css/show.css" />
+     	<link rel="stylesheet"  href="__ROOT__/Data/ueditor/third-party
+     	/SyntaxHighlighter/shCoreDefault.css">
+
+     	<script type="text/javascript" src="__ROOT__/Data/ueditor/third-party
+     	/SyntaxHighlighter/shCore.js"></script>
+     	<script type="text/javascript">
+     		SyntaxHighlighter.all();
+     	</script>
+     <include file='Common:nav'/>
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<div class='location'>
+				<a href="">首页</a>>
+				<!-- 判断>的个数，count 求出parent的总长度，-1，得到最后一个，注意$key，由foreach自动产生 -->
+				<php>$last=count($parent)-1;</php>
+				<foreach name='parent' item='v'>
+					<!-- 每个父项调到对应的页面 -->
+					<a href="{:U('/c_'.$v['id'])}">{$v.name}</a><if condition='$key neq $last'>></if>
+				</foreach>
+			</div>
+			<div class="title">
+				<p>{$blog.title}</p>
+				<div>
+					<span class='fl'>发布于:{$blog.time|date='Y年m月d日',###}</span>
+					<span class='fr'>
+						已被阅读<script type="text/javascript" src='{:U(GROUP_NAME."/Show/clickNum",array("id"=>$blog["id"]))}'></script>次
+					</span>
+				</div>
+			</div>
+			<div class='content' style='word-break:break-all'>
+				{$blog.content}
+			</div>
+		</div>
+	<include file='Common:right' />
+	</div>
+	<include file='Common:bottom' />
